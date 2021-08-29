@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Finder | Home</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/litera/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/aa0cd4b13a.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      footer {
+        background-color: rgb(43, 41, 41);
+        color: white;
+        margin-top: 410px;
+      }
+      @media only screen and (max-width: 310px) {
+        .searchhead {
+          font-size: 20px;
+        }
+        .searchsubhead {
+          font-size: 18px;
+        }
+        footer {
+          margin-top: 477px;
+        }
+      }
+
+      @media only screen and (min-width: 300px) and (max-width: 350px) {
+        .searchhead {
+          font-size: 25px;
+        }
+        .searchsubhead {
+          font-size: 20px;
+        }
+        footer {
+          margin-top: 477px;
+        }
+      }
+      @media only screen and (min-width: 350px) and (max-width: 475px) {
+        .searchhead {
+          font-size: 25px;
+        }
+        .searchsubhead {
+          font-size: 20px;
+        }
+        footer {
+          margin-top: 477px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-dark mb-3"
+      style="background-color: rgb(43, 41, 41); color: white"
+    >
+      <div
+        class="container"
+        style="background-color: rgb(43, 41, 41); color: white"
+      >
+        <a href="/index.html" class="navbar-brand">
+          <i class="fab fa-github-square"></i> Github Finder</a
+        >
+        <a href="/About.html" class="navbar-brand"> About</a>
+      </div>
+    </nav>
+    <div class="container searchContainer">
+      <div class="search card card-body">
+        <h1 class="searchhead">Search Github Users</h1>
+        <p class="lead searchsubhead">
+          Enter username to fetch a user profile and repos
+        </p>
+        <input
+          type="text"
+          id="searchUser"
+          class="form-control"
+          placeholder="Github Username..."
+        />
+      </div>
+      <br />
+      <div id="profile"></div>
+    </div>
+
+    <footer class="p-3 text-center">
+      &copy; Github Finder | All rights reserved
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="github.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
